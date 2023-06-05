@@ -58,10 +58,12 @@
 <body>
     <nav>
         <ul>
-            <li>{{navbar.item1}}</li>
-            <li>{{navbar.item2}}</li>
-            <li>{{navbar.item3}}</li>
-            <li>{{navbar.item4}}</li>
+            {{#with navbar}}
+            <li>{{item1}}</li>
+            <li>{{item2}}</li>
+            <li>{{item3}}</li>
+            <li>{{item4}}</li>
+            {{/with}}
         </ul>
     </nav>
     <h1>Introduction to {{topic}}</h1>
